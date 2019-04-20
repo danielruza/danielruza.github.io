@@ -1,0 +1,54 @@
+
+
+/*!
+ * ************************************************************************
+ * ************************************************************************
+ * ************************************************************************
+ * COMIENZO DEL AREA DE ESTILOS PERSONALIZADOS
+ * Creado por Daniel Ruza
+ * Abril 2019
+ * ************************************************************************
+ * ************************************************************************
+ * ************************************************************************
+ */
+
+.header{
+	background-image: url('../images/solo_paisaje.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@include media-breakpoint-up(xs) {
+	.header {
+		background-size: cover;
+		height: 400px;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	.header {
+		background-size: cover;
+		height: 500px;
+	}
+}
+
+@include media-breakpoint-up(md) {
+	.header {
+		background-size: cover;
+		height: 600px;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	.header {
+		background-size: cover;
+		height: 700px;
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.header {
+		background-size: cover;
+		height: 770px;
+	}
+}
