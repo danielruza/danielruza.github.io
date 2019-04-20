@@ -16,19 +16,31 @@
 	background-image: url('../images/solo_paisaje.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 }
+
+.navegacion{
+	background: rgba(0, 0, 0, .2 ) !important;
+	.lnk_principal{
+		color: #fff !important;
+	}
+}
+
+
+
 
 @include media-breakpoint-up(xs) {
 	.header {
 		background-size: cover;
-		height: 400px;
+		height: 350px;
 	}
 }
 
 @include media-breakpoint-up(sm) {
 	.header {
 		background-size: cover;
-		height: 500px;
+		height: 400px;
 	}
 }
 
@@ -42,7 +54,7 @@
 @include media-breakpoint-up(lg) {
 	.header {
 		background-size: cover;
-		height: 700px;
+		height: 650px;
 	}
 }
 
