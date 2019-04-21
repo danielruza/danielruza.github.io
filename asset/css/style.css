@@ -7601,6 +7601,13 @@ a.text-dark:hover, a.text-dark:focus {
  * ************************************************************************
  * ************************************************************************
  */
+#navegacion {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
 .header {
   background-image: url("../images/solo_paisaje.jpg");
   background-repeat: no-repeat;
@@ -7610,8 +7617,47 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navegacion {
   background: rgba(0, 0, 0, 0.2) !important; }
+  .navegacion .lnk_logo {
+    color: #fff !important;
+    font-size: 1.5em; }
   .navegacion .lnk_principal {
-    color: #fff !important; }
+    color: #fff !important;
+    font-size: .7rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center; }
+  .navegacion .nav-item i {
+    margin: 0 10px !important;
+    font-size: 1.5rem !important; }
+  .navegacion a:hover {
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+    color: #343434 !important; }
+
+.navegacion_mov {
+  background: rgba(0, 0, 0, 0.5) !important; }
+  .navegacion_mov .lnk_logo {
+    color: #fff !important;
+    font-size: 1.5em; }
+  .navegacion_mov .lnk_principal {
+    color: #fff !important;
+    font-size: .7rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center; }
+  .navegacion_mov .nav-item i {
+    margin: 0 10px !important;
+    font-size: 1.5rem !important; }
+  .navegacion_mov a:hover {
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+    color: #343434 !important; }
 
 .header {
   background-size: cover;

@@ -9,8 +9,8 @@
 </head>
 <body>
 	<header id="header" class="header">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light navegacion">
-		  <a class="navbar-brand lnk_principal" href="#">Gustavo Ruza</a>
+		<nav id="navegacion" class="navbar navbar-expand-lg navbar-light bg-light fixed-top navegacion">
+		  <a class="navbar-brand lnk_logo" href="index.html">Gustavo Ruza</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -18,19 +18,87 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link lnk_principal" href="#"><span>Inicio</span><span class="sr-only">(current)</span></a>
+		        <a class="nav-link lnk_principal" href="index.html">
+		        	<i class="fas fa-home"></i>
+		        	<span>Inicio</span>
+		        	<span class="sr-only">(current)</span>
+		        </a>
 		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link lnk_principal" href="#">Link</a>
+		      <li class="nav-item active">
+		        <a class="nav-link lnk_principal" href="#">
+		        	<i class="fas fa-question-circle"></i>
+		        	<span>¿QUÉ NECESITAS?</span>
+		        	<span class="sr-only">(current)</span>
+		        </a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link lnk_principal" href="#">
+		        	<i class="fas fa-lightbulb"></i>
+		        	<span>QUÉ OFREZCO</span>
+		        	<span class="sr-only">(current)</span>
+		        </a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link lnk_principal" href="#">
+		        	<i class="fas fa-cubes"></i>
+		        	<span>PRODUCTOS</span>
+		        	<span class="sr-only">(current)</span>
+		        </a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link lnk_principal" href="#">
+		        	<i class="fas fa-concierge-bell"></i>
+		        	<span>SERVICIOS</span>
+		        	<span class="sr-only">(current)</span>
+		        </a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link lnk_principal" href="#">
+		        	<i class="fas fa-phone"></i>
+		        	<span>CONTACTO</span>
+		        	<span class="sr-only">(current)</span>
+		        </a>
 		      </li>
 		    </ul>
 		    <ul class="navbar-nav my-2 my-lg-0 lnk_principal">
-		    	<li class="nav-item">facebook</li>
+		    	<li class="nav-item">
+		    		<a class="nav-link lnk_principal" href="#">
+		    			<i class="fab fa-facebook-square"></i>
+		    		</a>
+		    	</li>
+		    	<li class="nav-item">
+		    		<a class="nav-link lnk_principal" href="#">
+		    			<i class="fab fa-twitter-square"></i>
+		    		</a>
+		    	</li>
 		    </ul>
 		  </div>
 		</nav>
 	</header><!-- /header -->
 	<section>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
+		<h1>Esto es un texto</h1>
 		<h1>Esto es un texto</h1>
 	</section>
 	<footer>
@@ -38,5 +106,16 @@
 	</footer>
 	<script src="asset/js/jquery.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="asset/js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script>
+		$(window).scroll(function() {
+	        if ($("#navegacion").offset().top > 56) {
+	        	$("#navegacion").addClass("navegacion_mov");
+	        	$("#navegacion").removeClass("navegacion");
+	        } else {
+	            $("#navegacion").addClass("navegacion");
+	            $("#navegacion").removeClass("navegacion_mov");
+	        }
+	      });
+	</script>
 </body>
 </html>

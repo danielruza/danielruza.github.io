@@ -12,6 +12,14 @@
  * ************************************************************************
  */
 
+#navegacion{
+	-webkit-transition: all 1s ease;
+	   -moz-transition: all 1s ease;
+	    -ms-transition: all 1s ease;
+	     -o-transition: all 1s ease;
+	        transition: all 1s ease;
+}
+
 .header{
 	background-image: url('../images/solo_paisaje.jpg');
 	background-repeat: no-repeat;
@@ -22,11 +30,59 @@
 
 .navegacion{
 	background: rgba(0, 0, 0, .2 ) !important;
+	.lnk_logo{
+		color: #fff !important;
+		font-size: 1.5em;
+	}
 	.lnk_principal{
 		color: #fff !important;
+		font-size: .7rem;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
 	}
+	.nav-item i{
+		margin: 0 10px !important;
+		font-size: 1.5rem !important;
+	}
+	a:hover{
+		-webkit-transition: all .8s ease;
+		   -moz-transition: all .8s ease;
+		    -ms-transition: all .8s ease;
+		     -o-transition: all .8s ease;
+		        transition: all .8s ease;
+		color: #343434 !important;
+	}       
 }
 
+.navegacion_mov{
+	background: rgba(0, 0, 0, .5 ) !important;
+	.lnk_logo{
+		color: #fff !important;
+		font-size: 1.5em;
+	}
+	.lnk_principal{
+		color: #fff !important;
+		font-size: .7rem;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+	}
+	.nav-item i{
+		margin: 0 10px !important;
+		font-size: 1.5rem !important;
+	}
+	a:hover{
+		-webkit-transition: all .8s ease;
+		   -moz-transition: all .8s ease;
+		    -ms-transition: all .8s ease;
+		     -o-transition: all .8s ease;
+		        transition: all .8s ease;
+		color: #343434 !important;
+	}
+
+	
+}
 
 
 
